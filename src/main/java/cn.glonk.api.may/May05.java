@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -99,11 +100,13 @@ public class May05 {
         int[] nums = new int[]{2,7,11,15};
         int target = 9;
         long start = System.currentTimeMillis();
-        twoSum(nums, target);
+        int[] res = twoSum(nums, target);
+        System.out.println("============res============" + Arrays.toString(res));
         long end = System.currentTimeMillis();
         System.out.println("=====twoSum explain========" + (end - start) + " ms ");
         long start1 = System.currentTimeMillis();
-        twoSum1(nums, target);
+        int[] res1 = twoSum1(nums, target);
+        System.out.println("============res1============" + Arrays.toString(res1));
         long end1 = System.currentTimeMillis();
         System.out.println("=====twoSum1 explain========" + (end1 - start1) + " ms ");
         System.gc();
